@@ -1,0 +1,24 @@
+E
+======================================================================
+ERROR: advanced_search_library (__main__.Yuntu_case)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:/Yuntu_App/yuntuAutocase.py", line 26, in setUp
+    self.driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
+  File "C:\python3.7.1\lib\site-packages\appium\webdriver\webdriver.py", line 94, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\python3.7.1\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\python3.7.1\lib\site-packages\appium\webdriver\webdriver.py", line 135, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\python3.7.1\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\python3.7.1\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.taptap' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'com.play.taptap.ui.SplashAct' or 'com.taptap.com.play.taptap.ui.SplashAct' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting
+
+
+----------------------------------------------------------------------
+Ran 1 test in 62.239s
+
+FAILED (errors=1)
